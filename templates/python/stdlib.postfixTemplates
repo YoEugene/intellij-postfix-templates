@@ -102,7 +102,7 @@ finally:\
 	ANY   →   abs($expr$)$END$
 
 .ae : Return the assertEqual expression
-	ANY   →   self.assertEqual($expr$, $END$)
+	ANY   →   self.assertEqual($expr$, $VAR$)$END$
 
 .at : Return the assertTrue expression
 	ANY   →   self.assertEqual($expr$)$END$
