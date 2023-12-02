@@ -100,3 +100,12 @@ finally:\
 
 .abs : Return the absolute value
 	ANY   →   abs($expr$)$END$
+
+.ae : Return the assertEqual expression
+	ANY   →   self.assertEqual($expr$, $END$)
+
+.at : Return the assertTrue expression
+	ANY   →   self.assertEqual($expr$)$END$
+
+.af : Return the assertFalse expression
+	ANY   →   self.assertEqual($expr$)$END$
